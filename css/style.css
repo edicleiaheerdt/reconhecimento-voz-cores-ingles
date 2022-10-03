@@ -49,3 +49,39 @@ header#cabecalho-principal{
   font-size: 27px;
   margin-right: 20px;
 }
+
+section#corpo div#esquerdo{
+  margin-top: 15px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  align-items: center;
+
+  border: 3px solid black;
+}
+
+section#corpo div#esquerdo div#cor-atual{
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+
+  border: 10px solid black;
+  border-radius: 15px;
+
+}
+
+section#corpo div#esquerdo button#btn-responder{
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 45px;
+
+}
