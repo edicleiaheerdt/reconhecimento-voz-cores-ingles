@@ -78,11 +78,12 @@ gravador.onend = function(){
 }
 
 gravador.onresult = function(event){
-  transcricaoAudio = event.results[0][0].transcript.toUpperCase();
+  transcricaoAudio = event.results[0][0].transcript.toUpperCase().replace(".","");
   respostaCorreta = document.getElementById('cor-na-caixa').innerText.toUpperCase();
 
   console.log(transcricaoAudio);
   console.log(respostaCorreta);
+  console.log(event.results);
 
   if(transcricaoAudio ===  respostaCorreta){
     atualizaPontuacao(1);
